@@ -1,19 +1,21 @@
 {
   "name": "hatchery",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal playground",
+  "author": "Sungho Kim <shirenbeat@gmail.com> (https://shiren.dev)",
+  "homepage": "https://github.com/shiren/hatchery",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap --hoist && npm i",
     "link": "lerna link convert"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@testing-library/react": "^11.2.3",
     "@types/jest": "^26.0.20",
@@ -24,7 +26,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
-    "core-js": "^3.8.1",
+    "core-js": "^3.8.2",
     "corejs": "^1.0.0",
     "eslint": "^7.15.0",
     "eslint-plugin-react": "^7.22.0",
@@ -33,14 +35,17 @@
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
     "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
     "ts-jest": "^26.4.4",
     "webpack": "^5.10.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "4.0.0-beta.0"
   },
   "dependencies": {
-    "js": "file:packages/js",
-    "react": "file:packages/react",
-    "ts": "file:packages/ts"
+    "pgjs": "file:packages/pgjs",
+    "pgreact": "file:packages/pgreact",
+    "pgts": "file:packages/pgts"
   }
 }

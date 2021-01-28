@@ -1,3 +1,5 @@
+import my from 'mymodule';
+
 class MyClass {
   #pField = 'hello';
 
@@ -5,5 +7,7 @@ class MyClass {
     return this.#pField;
   }
 }
+
+console.log(my);
 
 export default MyClass;

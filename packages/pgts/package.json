@@ -1,0 +1,19 @@
+{
+  "name": "pgts",
+  "version": "0.0.1",
+  "description": "Personal playground",
+  "author": "Sungho Kim <shirenbeat@gmail.com> (https://shiren.dev)",
+  "homepage": "https://github.com/shiren/hatchery",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "serve": "webpack serve --mode development",
+    "test": "jest"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

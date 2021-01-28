@@ -51,6 +51,7 @@ module.exports = (env, argv, dirname = __dirname) => {
       ],
       devServer: {
         open: 'Google Chrome',
+        host: '0.0.0.0',
         overlay: {
           warnings: false,
           errors: false,
