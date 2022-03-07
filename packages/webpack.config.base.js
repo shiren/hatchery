@@ -50,12 +50,18 @@ module.exports = (env, argv, dirname = __dirname) => {
         }),
       ],
       devServer: {
-        open: 'Google Chrome',
-        host: '0.0.0.0',
-        overlay: {
-          warnings: false,
-          errors: false,
+        open: {
+          app: {
+            name: 'Google Chrome', // 플랫폼에 다름, 윈도우에서는 'chrome'
+          }
         },
+        host: '0.0.0.0',
+        client: {
+          overlay: {
+            warnings: false,
+            errors: false,
+          },
+        }
       },
       devtool: 'eval-cheap-module-source-map',
     };

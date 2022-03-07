@@ -1,5 +1,3 @@
-import my from 'mymodule';
-
 class MyClass {
   #pField = 'hello';
 
@@ -8,6 +6,6 @@ class MyClass {
   }
 }
 
-console.log(my);
+console.log(new MyClass().getPField());
 
 export default MyClass;

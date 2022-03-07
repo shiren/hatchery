@@ -1,5 +1,4 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
   extends: [
     '../.eslintrc',
     'plugin:@typescript-eslint/recommended',
@@ -7,6 +6,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
   ],
   plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       impliedStrict: true,

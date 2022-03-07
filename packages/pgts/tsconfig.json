@@ -9,6 +9,9 @@
     }
   },
   "include": [
+		"jest.config.js",
+		".eslintrc.js",
+		"webpack.config.js",
     "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.tsx"
